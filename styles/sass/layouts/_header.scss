@@ -1,0 +1,56 @@
+/* HEADER */
+
+.header {
+    width:100%;
+    border-bottom: 0.5rem $mainColor solid;
+    overflow: hidden;
+    &__title {
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
+        color: $mainColor;
+        h1:nth-child(even) {
+            color: #000;
+            text-shadow:0.05rem 0 0 $mainColor, 0 0.05rem 0 $mainColor, -0.05rem 0 0 $mainColor, 0 -0.05rem 0 $mainColor;
+        }
+    }
+    &-slideToLeft {
+        animation: slideToLeft 30s linear infinite;
+    }
+    &__slogan {
+        width:100%;
+        border-top:0.5rem $mainColor solid;
+        
+    }
+    &-slideToRight {
+        display: flex;
+        white-space: nowrap;
+        color: $mainColor;
+        h2:nth-child(odd) {
+            color: #000;
+            text-shadow:0.05rem 0 0 $mainColor, 0 0.05rem 0 $mainColor, -0.05rem 0 0 $mainColor, 0 -0.05rem 0 $mainColor;
+        }
+        animation: slideToRight 30s linear infinite;
+    }
+
+}
+
+/*KEYFRAMES*/
+
+@keyframes slideToLeft {
+    from{
+        transform : translateX(0%);
+    }
+    100% {
+        transform : translateX(-100%);
+    }
+}
+
+@keyframes slideToRight {
+    from{
+        transform : translateX(-100%);
+    }
+    100% {
+        transform : translateX(0%);
+    }
+}
