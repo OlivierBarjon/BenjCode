@@ -10,7 +10,7 @@
         white-space: nowrap;
         color: $mainColor;
         h1:nth-child(even) {
-            color: #000;
+            color: $backgroundColor;
             text-shadow:0.05rem 0 0 $mainColor, 0 0.05rem 0 $mainColor, -0.05rem 0 0 $mainColor, 0 -0.05rem 0 $mainColor;
         }
     }
@@ -27,7 +27,7 @@
         white-space: nowrap;
         color: $mainColor;
         h2:nth-child(odd) {
-            color: #000;
+            color: $backgroundColor;
             text-shadow:0.05rem 0 0 $mainColor, 0 0.05rem 0 $mainColor, -0.05rem 0 0 $mainColor, 0 -0.05rem 0 $mainColor;
         }
         animation: slideToRight 30s linear infinite;

@@ -2,7 +2,7 @@
 
 /*GEN*/
 body {
-    background-color: black;
+    background-color: $backgroundColor;
 }
 
 /*BLOCKS*/
@@ -21,28 +21,19 @@ body {
     justify-content: space-around;
     align-items: flex-end;
     position: relative;
-    margin: 3rem 0rem 0rem 0rem;
+    /* margin: 3rem 0rem 0rem 0rem; */
     overflow: hidden;
-   /*  z-index:-1; */
-    @media all and (max-width:480px) {
+    @media all and (max-width:960px) {
         flex-direction:column-reverse;      
     }
-    @media all and (min-width:481px) and (max-width:960px){
-        flex-direction:column-reverse;
-    }
     &__photo {
-        width:70%;
+        width:65%;
         /* position: relative; */
         bottom:0rem;
         margin-left : 3rem;
-        @media all and (max-width:480px) {
+        @media all and (max-width:960px){
             width: 100%;
-            margin-left : 0rem;
-            overflow: hidden;
-        }
-        @media all and (min-width:481px) and (max-width:960px){
-            width: 100%;
-            margin-left : 0rem;
+            margin : auto;
             overflow: hidden;
         }
         &__bigCircle {
@@ -71,8 +62,9 @@ body {
             }
         }
         &__img {
-            max-width:47rem;
+            /* max-width:47rem; */
             height: 38rem;
+            padding-top:5rem;
             position: absolute;
             bottom:0rem;
             z-index : 2;
@@ -102,7 +94,7 @@ body {
                 bottom:-0.5rem;
             }
             img {
-                width: 100%;
+                /* width: 100%; */
             }
         }
         &__smallCircle {
@@ -127,20 +119,19 @@ body {
         }
     }
     &__txtPres {
-        width:30%;
-        margin:5rem 5rem 5rem 1rem;
+        width:35%;
+        margin:5rem 5rem 3rem 0rem;
+        line-height: 1.6rem;
         z-index:4;
-        @media all and (max-width:480px) {
-            width: 90%;
-            margin: auto;
-        }
-        @media all and (min-width:481px) and (max-width:960px){
+        @media all and (max-width:960px){
             width: 90%;
             margin: auto;
         }
         &-souligne {
-            text-decoration: underline;
-            text-underline-offset:0.2rem; /* Firefox only */
+            /* text-decoration: underline;
+            text-underline-offset:0.2rem; Firefox only */
+            border-bottom : 0.05rem $mainColor solid;
+            padding-bottom: 0.05rem;
         }
         &__blocContact {
             display: flex;
@@ -149,7 +140,7 @@ body {
             justify-content:flex-start;
             align-items: center;
             img {
-                height:1rem;
+                height:1.4rem;
                 padding-right:0.7rem;
             }
         }
