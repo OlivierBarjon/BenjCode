@@ -22,18 +22,19 @@ body {
     align-items: flex-start;
     margin: 3rem 0rem 0rem 0rem;
     overflow: hidden;
-    max-height:37rem;
-    @media all and (max-width:960px) {
+    /* max-height:37rem; */
+    @media all and (max-width:1240px) {
         flex-direction:column-reverse; 
-        max-height:90rem;   
+        /* max-height:90rem; */   
     }
-    /* @media all and (min-width:481px) and (max-width:960px){
+    /* @media all and (min-width:481px) and (max-width:1240px){
         height:90rem;
     } */
     &__photo {
         width:65%;
-        bottom:0rem;
-        @media all and (max-width:960px){
+        position: relative;
+        bottom:-0.25rem;
+        @media all and (max-width:1240px){
             width: 100%;
         }
         &__bigCircle {
@@ -41,9 +42,9 @@ body {
             height:30rem;
             background-color: $mainColor;
             border-radius:50%;
-            position: relative;
-            top: -35rem;
-            left : 6rem;
+            position: absolute;
+            top: 8rem;
+            left : 8rem;
             z-index : -1;
             @media all and (max-width:480px) {
                 width: 18rem;
@@ -51,15 +52,22 @@ body {
                 top: -19rem;
                 left : 0.5rem;
             }
+            @media all and (max-width:1240px) {
+                top: 7rem;
+                left : 7rem;
+            }
         }
         &__img {
             position: relative;
-            bottom:0rem;
             left : 3rem;
             z-index : 0;
             @media all and (max-width:480px) {
-                height : 20rem;
+                width:100%;
                 left : 0rem;
+            }
+            @media all and (max-width:1240px) {
+                width:70%;
+                left : 1rem;
             }
         }
         &__smallCircle {
@@ -67,8 +75,8 @@ body {
             height:3rem;
             background-color: $mainColor;
             border-radius:50%;
-            position: relative;
-            top: -40rem;
+            position: absolute;
+            top: 28.5rem;
             left : 30rem;
             z-index : 1;
             @media all and (max-width:480px) {
@@ -84,7 +92,7 @@ body {
         margin:2rem 5rem 3rem 0rem;
         line-height: 1.6rem;
         z-index:0;
-        @media all and (max-width:960px){
+        @media all and (max-width:1240px){
             width: 100%;
             margin: auto;
         }
