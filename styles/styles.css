@@ -56,14 +56,14 @@ body {
   .content__photo__bigCircle {
     width: 18rem;
     height: 18rem;
-    top: -19rem;
-    left: 0.5rem;
+    top: 20%;
+    left: 5%;
   }
 }
-@media all and (max-width: 1240px) {
+@media all and (min-width: 481px) and (max-width: 1240px) {
   .content__photo__bigCircle {
-    top: 7rem;
-    left: 7rem;
+    top: 20%;
+    left: 10%;
   }
 }
 .content__photo__img {
@@ -79,7 +79,7 @@ body {
 }
 @media all and (max-width: 1240px) {
   .content__photo__img {
-    width: 70%;
+    width: 90%;
     left: 1rem;
   }
 }
@@ -97,8 +97,12 @@ body {
   .content__photo__smallCircle {
     width: 1.5rem;
     height: 1.5rem;
-    top: -23.5rem;
-    left: 14rem;
+  }
+}
+@media all and (max-width: 1240px) {
+  .content__photo__smallCircle {
+    top: 70%;
+    left: 55%;
   }
 }
 .content__txtPres {

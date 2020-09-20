@@ -49,12 +49,12 @@ body {
             @media all and (max-width:480px) {
                 width: 18rem;
                 height: 18rem;
-                top: -19rem;
-                left : 0.5rem;
+                top: 20%;
+                left : 5%;
             }
-            @media all and (max-width:1240px) {
-                top: 7rem;
-                left : 7rem;
+            @media all and (min-width:481px) and (max-width:1240px) {
+                top: 20%;
+                left : 10%;
             }
         }
         &__img {
@@ -66,7 +66,7 @@ body {
                 left : 0rem;
             }
             @media all and (max-width:1240px) {
-                width:70%;
+                width:90%;
                 left : 1rem;
             }
         }
@@ -82,8 +82,10 @@ body {
             @media all and (max-width:480px) {
                 width: 1.5rem;
                 height: 1.5rem;
-                top: -23.5rem;
-                left : 14rem;
+            }
+            @media all and (max-width:1240px) {
+                top: 70%;
+                left : 55%;
             }
         }
     }
